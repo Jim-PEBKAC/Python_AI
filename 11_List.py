@@ -11,7 +11,6 @@ a = []
 df_list=['apple','mango', 'carrot','banana']
 
 print(f'shop_list: {df_list}') #f-string 사용한 이유는 성의있어 보이기 위함. 굳이 사용안해도 됌.
-print(df_list[1:2]) # 첫 번째 가로열에서 두 번째 세로열에 있는 거 출력해.
 
 # [리스트에 값 넣는 방법]
 # 가장 뒤로부터 넣는 방법 (순서대로 넣는다. → 줄 세우는 구조)
