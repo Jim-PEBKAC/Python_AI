@@ -20,3 +20,4 @@ for i in range(1,10):
         n=n+1 #3의 배수를 한 번이 아닌 여러번 하기 위해 변수 설정
         continue
     print(i)
+
