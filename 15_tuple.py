@@ -17,3 +17,5 @@ print(f'{tu2} → {tu2list}')  # 튜플을 리스트로
 
 list2tu = tuple(tu2list)
 print(f'{tu2list} → {list2tu}') # 리스트를 튜플로
+
+# 튜플은 수정이 불가능한 데이터, 구성이 중복되도 유지된다.
