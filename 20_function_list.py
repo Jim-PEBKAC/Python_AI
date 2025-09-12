@@ -14,10 +14,7 @@ print('--------------------------------')
 def num():
     cou = 1
     print(f'{cou}번 번호표 입니다.')
-    ticket = f'{cou}번 번호표'
-    cou += 1
-    return ticket
-
+    return f'{cou}번 번호표'
 papper = num()
 print(papper)
 
