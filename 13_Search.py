@@ -36,12 +36,13 @@ idx = 0
 #     print(f'3의 값은 {idx}번째에 있다')   # 3의 값이 idx(값) 번째에 있다고 출력해라.
 #     idx += 1                           #  idx를 1 증가 시켜, [이유: 0으로만 계산되어 0번째만 출력되기 때문]
 
-for n in b: # for in을 이용하면 list에 있는 값을 순서대로 하나씩 뽑는다.
-    if n ==3:
+for i in b: # for in을 이용하면 list에 있는 값을 순서대로 하나씩 뽑아서 i에 넣는다.
+    if i ==3:
         print(f'3이 있는 인덱스:{idx}')
     idx += 1
 
 print(f'a:{a}')
+
 a.remove(3)
 print(f'a:{a}')
 
