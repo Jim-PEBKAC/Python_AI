@@ -19,4 +19,26 @@ print(tuple_args(1,2,3,4,5))
 
 # 별(**) 표시를 앞에 붙이면 매개변수를 딕셔너리 형태(키와 벨류)로 받겠다.
 def dic_args(**dic):
-    pass
+    # 1. dic에서 값만 빼온다.
+    # 2. 이 값들을 하나씩 더해 누적시킨다.
+    # 3. 누적시킨 값을 밖으로 return 한다.
+    values = dic.values()
+    print(values)
+    total = 0
+    for i in values:
+        total = total + i
+    return total
+
+#   밑에는 items에 대한 이해가 더 필요할 듯
+#   for key, value in dic.items(): 
+#   total += value  # total = total + value
+#   return total
+
+# 위 함수를 실행하면 입력된 값들의 합산이 반환된도록 하세요.
+result = dic_args(kim=50,less=100, park=70,na=90)
+print(result)
+
+print('------------------')
+
+
+
