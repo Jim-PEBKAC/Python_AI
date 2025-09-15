@@ -1,0 +1,13 @@
+class Car:
+    gear = 0
+    on = False
+
+    # 생성자
+    def __init__(self):
+        pass
+
+    # 멤버 함수 - 클래스 안의 생성자 함수들은 해당 객체를 표시하기 위한 self를 기본으로 갖고 있다.
+    def start(self):
+        pass
+    def change(self)
+        pass:
