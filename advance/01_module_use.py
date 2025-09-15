@@ -10,3 +10,4 @@ print(f'minus() 함수실행 : {op.minus(10,5)}')
 
 # 변수도 불러오기 가능
 print(f'filed1: {op.field1} / filed2: {op.field2}')
+print(f'filed1: {oper.field1} / filed2: {oper.field2}')

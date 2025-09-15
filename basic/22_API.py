@@ -14,3 +14,4 @@ print_max(5,10)
 
 # 해당 함수에 대한 설명 출력
 print(f'함수설명:{print_max.__doc__}')
+
