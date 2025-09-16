@@ -16,6 +16,7 @@ class Car:
             self.on = True
         else:
             print(f'시동이 이미 걸려있습니다.')
+
     def change(self,gear):
         print(f'{gear}단으로 변속했습니다.')
         self.gear += gear
