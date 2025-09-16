@@ -4,6 +4,11 @@ class Robot:
     def how_count(self):
         print(f'객체 메서드: {self.count}')
 
+    # 1. 원본영역에서 함수를 실행하니 self 가 없다고 에러가남
+    # TypeError: Robot.std_count() missing 1 required positional argument: 'self'
+    # self는 내가 소속된 객체를 의미하는데 원본에서 왔으므로 객체가 없다.
+    # @classmethod 어노테이션을 이용해 원본에서 직접 왔으므로 self는 객체가 아닌 클래스라도 알려줌
+    # 그러니 self라는 이름은 객체를 받는 인자값으로 오해할 수 있으니 cls로 바꾸라는 권고
     @classmethod # 원본 영역의 변수를 건드릴 수 있다는 표시
     def std_count(self):
         print(f'클래스 메서드 : {self.count}')
