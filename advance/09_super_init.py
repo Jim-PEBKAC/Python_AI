@@ -15,7 +15,7 @@ class SchoolMember():
     name = ''
     age = 0
 
-    def __init__(self, name, age):
+    def __init__(self, name, age): # 3. 받아온 값을 초기화하고 객체화된다.
         self.name = name
         self.age = age
 
@@ -23,8 +23,10 @@ class Teacher(SchoolMember):
     salary = 0
 
     def __init__(self, name, age, salary):
-        super().__init__(name, age)
-        self.salary = salary
+        super().__init__(name, age) # 2. 부모를 먼저 객체화시켜 초기화할 값 전달
+        self.salary = salary # 4. 그리고 내가 초기화하면서 객체화
 
+# 1. Teacher 라는 클래스를 객체화한다.(초기화를 위해 매개변수를 전달)
 t=Teacher('김철수',33,5000000)
+# 5. name과 age는 부모것이지만 내것처럼 내 객체에서 쓸 수 있게 된다.
 print(f'{t.name}({t.age})-{t.salary}원')
